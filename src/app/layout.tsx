@@ -2,9 +2,8 @@ import "./globals.css";
 
 import clsx from "clsx";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"] });
+import { open_Sans } from "@/utils/fonts";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -19,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={clsx(inter.className, "container max-w-[90%] mx-auto bg-black pt-8 md:pt-16")}
+        className={clsx(open_Sans.className, "container max-w-[90%] mx-auto bg-black pt-8 md:pt-16")}
       >
         {children}
       </body>
