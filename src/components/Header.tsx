@@ -5,17 +5,16 @@ import Logo from "../../public/logo.png";
 
 const Header = () => {
   return (
-    <div className="flex justify-between align-items-center absolute container w-full">
+    <div className="flex justify-between align-items-center absolute container max-w-[90%]">
       <div>
         <Image
           src={Logo}
           alt="Galactech Web Solutions logo"
-          width={150}
-          height={95}
+          className="w-20 md:w-40 h-12 md:h-24"
         />
       </div>
-      <button className="bg-white px-6 py-4 text-xl rounded-full flex align-items-center gap-2.5 self-center">
-        <div>Let{"'"}s talk</div>
+      <button className="bg-white px-3 md:px-6 py-2 md:py-4 text-md md:text-lg rounded-full flex align-items-center gap-2.5 self-center">
+        <div>Let's talk</div>
         <div className="flex align-items-center">
           <Image src={ArrowCircleRight} alt="Round right caret" />
         </div>
