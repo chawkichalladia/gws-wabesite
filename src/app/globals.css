@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.earth-bg {
+  background-image: url('../../public/earth-bg.png');
+}

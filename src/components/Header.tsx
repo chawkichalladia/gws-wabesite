@@ -5,7 +5,7 @@ import Logo from "../../public/logo.png";
 
 const Header = () => {
   return (
-    <div className={"flex justify-between align-items-center"}>
+    <div className="flex justify-between align-items-center absolute container w-full">
       <div>
         <Image
           src={Logo}

@@ -4,8 +4,6 @@ import clsx from "clsx";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 
-import Header from "@/components/Header";
-
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -23,7 +21,6 @@ export default function RootLayout({
       <body
         className={clsx(inter.className, "container mx-auto bg-black pt-16")}
       >
-        <Header />
         {children}
       </body>
     </html>
