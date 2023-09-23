@@ -1,7 +1,7 @@
 import Image from "next/image";
 
-import Logo from "../../public/logo.png";
 import ArrowCircleRight from "../../public/arrow-circle-right.svg";
+import Logo from "../../public/logo.png";
 
 const Header = () => {
   return (
@@ -15,7 +15,7 @@ const Header = () => {
         />
       </div>
       <button className="bg-white px-6 py-4 text-xl rounded-full flex align-items-center gap-2.5 self-center">
-        <div>Let&lsquo;s talk</div>
+        <div>Let{"'"}s talk</div>
         <div className="flex align-items-center">
           <Image src={ArrowCircleRight} alt="Round right caret" />
         </div>
