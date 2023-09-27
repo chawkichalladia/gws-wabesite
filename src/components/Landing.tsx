@@ -26,7 +26,7 @@ const Landing = () => {
           <Image src={DiamondImg} alt="Diamond svg" />
         </div>
       </h1>
-      <p className="text-grey-4 text-sm px-3">
+      <p className="text-sm px-3">
         We are a web development company that helps businesses develop functional and reliable web solutions.
       </p>
       <button className={clsx(poppins.className, 'py-2 md:py-4 w-48 md:w-60 bg-blue-primary rounded-lg')}>

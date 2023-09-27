@@ -16,7 +16,7 @@ const Services = () => {
       <SectionHead image={DocumentCloudIcon} label="services" title="we build everything from scratch" negativeMargin />
       <div className="container grid grid-cols-1 gap-20">
         <div className="container">
-          <div className="container flex items-center justify-center">
+          <div className="container flex items-center justify-center pt-11 md:pt-20">
             <div className="w-12 h-12 rounded-lg border-blue-secondary border flex justify-center items-center">
               <Image src={SquareNetworkIcon} alt="Square network icon" />
             </div>
@@ -33,7 +33,7 @@ const Services = () => {
           </div>
         </div>
         <div className="container">
-          <div className="container flex items-center justify-center">
+          <div className="container flex items-center justify-center md:pt-20">
             <div className="w-12 h-12 rounded-lg border-blue-secondary border flex justify-center items-center">
               <Image src={SquareNetworkIcon} alt="Square network icon" />
             </div>

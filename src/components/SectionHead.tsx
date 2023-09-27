@@ -21,7 +21,7 @@ const SectionHead = ({ image, label, title, negativeMargin = false }: SectionHea
         </div>
         <span className={clsx(poppins.className, 'font-bold text-base md:text-2xl uppercase')}>{label}</span>
       </div>
-      <div className="container flex justify-center text-center py-11 md:py-20">
+      <div className="container flex justify-center text-center pt-11 md:pt-20">
         <span className={clsx(poppins.className, 'font-bold text-2xl md:text-5xl capitalize')}>{title}</span>
       </div>
     </>
