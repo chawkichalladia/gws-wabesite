@@ -5,3 +5,18 @@
 .earth-bg {
   background-image: url('../../public/earth-bg.png');
 }
+
+.triangle-gradient::before {
+  content: "";
+  display: block;
+  top: 0;
+  left: 0;
+  height: 180px;
+  width: 5px;
+  background-image: linear-gradient(to bottom, #000, #36aeff, #0037dc);
+  clip-path: polygon(0% 100%, 100% 100%, 50% 0%);
+}
+
+.icon-container {
+  background-image: linear-gradient(45deg, #8C8C8C, #36aeff, #0037dc);
+}
