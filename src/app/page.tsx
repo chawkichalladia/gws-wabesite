@@ -4,6 +4,7 @@ import Header from '@/components/Header';
 import Landing from '@/components/Landing';
 import OurExpertise from '@/components/OurExpertise';
 import Services from '@/components/Services';
+import TalkToUs from '@/components/TalkToUs';
 
 const page = () => {
   return (
@@ -14,6 +15,7 @@ const page = () => {
       <Services />
       <Coding />
       <OurExpertise />
+      <TalkToUs />
     </div>
   );
 };
