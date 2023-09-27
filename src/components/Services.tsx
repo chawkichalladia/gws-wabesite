@@ -6,25 +6,14 @@ import DocumentCloudIcon from '../../public/document-cloud.svg';
 import NewBuildImage from '../../public/new-build-image.png';
 import SquareNetworkIcon from '../../public/square-network.svg';
 
-import LinearUpArrow from './LinearUpArrow';
+import SectionHead from './SectionHead';
 
 import { poppins } from '@/utils/fonts';
 
 const Services = () => {
   return (
     <div className="container">
-      <div className="container flex flex-col items-center gap-4">
-        <LinearUpArrow />
-        <div className="rounded-full w-[54px] h-[54px] icon-container flex justify-center items-center">
-          <Image src={DocumentCloudIcon} alt="Cloud document icon" />
-        </div>
-        <span className={clsx(poppins.className, 'font-bold text-base md:text-2xl uppercase')}>services</span>
-      </div>
-      <div className="container flex justify-center text-center py-11 md:py-20">
-        <span className={clsx(poppins.className, 'font-bold text-2xl md:text-5xl capitalize')}>
-          we build everything from scratch
-        </span>
-      </div>
+      <SectionHead image={DocumentCloudIcon} label="services" title="we build everything from scratch" negativeMargin />
       <div className="container grid grid-cols-1 gap-20">
         <div className="container">
           <div className="container flex items-center justify-center">
