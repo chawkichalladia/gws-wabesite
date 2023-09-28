@@ -18,12 +18,12 @@ export const LetsTalkButton = () => {
 
 const Header = () => {
   return (
-    <div className="flex justify-between align-items-center absolute container max-w-[90%]">
+    <header className="flex justify-between align-items-center absolute container max-w-[90%]">
       <div>
         <Image src={Logo} alt="Galactech Web Solutions logo" className="w-20 md:w-40 h-12 md:h-24" />
       </div>
       <LetsTalkButton />
-    </div>
+    </header>
   );
 };
 

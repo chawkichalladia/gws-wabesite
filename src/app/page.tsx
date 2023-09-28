@@ -1,5 +1,6 @@
 import Coding from '@/components/Coding';
 import EarthBackground from '@/components/EarthBackground';
+import Footer from '@/components/Footer';
 import Header from '@/components/Header';
 import InGalactech from '@/components/InGalactech';
 import Landing from '@/components/Landing';
@@ -20,6 +21,7 @@ const page = () => {
       <TalkToUs />
       <InGalactech />
       <OwnYourSpace />
+      <Footer />
     </div>
   );
 };
