@@ -7,7 +7,7 @@ import { poppins } from '@/utils/fonts';
 
 const Footer = () => {
   return (
-    <footer className="w-full absolute -m-[5%] pt-40">
+    <footer className="w-full absolute -m-[5%]">
       <div className="bg-blue-alternative w-full flex justify-center items-center flex-col p-9 md:px-24 gap-10">
         <div>
           <Image src={Logo} alt="Galactech Web Solutions logo" className="w-20 md:w-40 h-12 md:h-24" />

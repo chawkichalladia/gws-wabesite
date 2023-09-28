@@ -25,6 +25,10 @@
   background-image: linear-gradient(to right, #36aeff, #0037dc);
 }
 
+.technology-tag {
+  background-image: linear-gradient(to bottom, #36aeff, #0037dc);
+}
+
 p {
   color: #d9d9d9;
 }
