@@ -1,5 +1,4 @@
 import Coding from '@/components/Coding';
-import EarthBackground from '@/components/EarthBackground';
 import Footer from '@/components/Footer';
 import Header from '@/components/Header';
 import InGalactech from '@/components/InGalactech';
@@ -12,8 +11,8 @@ import TalkToUs from '@/components/TalkToUs';
 
 const page = () => {
   return (
-    <div className='w-full'>
-      <EarthBackground />
+    <div className="w-full">
+      <div className="container -ml-[5%] h-screen absolute -z-10 earth-bg bg-center bg-no-repeat bg-cover md:bg-contain"></div>
       <Header />
       <Landing />
       <Services />
