@@ -12,7 +12,7 @@ import TalkToUs from '@/components/TalkToUs';
 const page = () => {
   return (
     <div className="w-full">
-      <div className="container -ml-[5%] h-screen absolute -z-10 earth-bg bg-center bg-no-repeat bg-cover md:bg-contain"></div>
+      <div className="w-full -ml-[5%] h-screen absolute -z-10 earth-bg bg-center bg-no-repeat bg-cover md:bg-contain"></div>
       <Header />
       <Landing />
       <Services />

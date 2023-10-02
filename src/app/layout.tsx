@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={clsx(open_Sans.className, "container max-w-[90%] mx-auto bg-black text-white text-justify pt-8 md:pt-16")}
+        className={clsx(open_Sans.className, "container max-w-[90%] overflow-x-hidden mx-auto bg-black text-white text-justify md:text-center text-base md:text-lg")}
       >
         {children}
       </body>
