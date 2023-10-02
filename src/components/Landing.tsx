@@ -3,6 +3,7 @@ import Image from 'next/image';
 
 import DiamondImg from '../../public/diamond.svg';
 
+import { h1 } from '@/utils/commonClasses';
 import { orion_pax, poppins } from '@/utils/fonts';
 
 const Landing = () => {
@@ -10,12 +11,7 @@ const Landing = () => {
     <div className="w-full h-screen flex items-center justify-center flex-col">
       <div className="flex items-center justify-center text-center flex-col gap-y-7">
         <h3 className={clsx(orion_pax.className, 'lg:text-2xl capitalize')}>custom web-based solutions</h3>
-        <h1
-          className={clsx(
-            poppins.className,
-            'text-2xl lg:text-5xl font-bold uppercase flex flex-col lg:flex-row lg:gap-2'
-          )}
-        >
+        <h1 className={clsx(poppins.className, h1, 'uppercase flex flex-col lg:flex-row lg:gap-2')}>
           <div className="flex justify-center lg:gap-2">
             <Image src={DiamondImg} alt="Diamond svg" className="lg:hidden" />
             <span>we design</span>

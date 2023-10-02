@@ -2,6 +2,7 @@ import clsx from 'clsx';
 import { StaticImport } from 'next/dist/shared/lib/get-img-props';
 import Image from 'next/image';
 
+import { h1 } from '@/utils/commonClasses';
 import { poppins } from '@/utils/fonts';
 
 interface SectionHeadProps {
@@ -22,7 +23,7 @@ const SectionHead = ({ image, label, title, negativeMargin = false }: SectionHea
         <span className={clsx(poppins.className, 'font-bold lg:text-2xl uppercase')}>{label}</span>
       </div>
       <div className="w-full flex justify-center text-center pt-11 lg:pt-20">
-        <span className={clsx(poppins.className, 'font-bold text-2xl lg:text-5xl capitalize')}>{title}</span>
+        <h1 className={clsx(poppins.className, h1, 'capitalize')}>{title}</h1>
       </div>
     </>
   );

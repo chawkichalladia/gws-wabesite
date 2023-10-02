@@ -6,6 +6,7 @@ import MessageIcon from '../../public/message-icon.svg';
 
 import SectionHead from './SectionHead';
 
+import { h1 } from '@/utils/commonClasses';
 import { poppins } from '@/utils/fonts';
 
 const Coding = () => {
@@ -26,9 +27,9 @@ const Coding = () => {
       </div>
       <div className="w-full flex flex-col items-center justify-center">
         <div className="w-full flex justify-center text-center">
-          <h2 className={clsx(poppins.className, 'text-2xl lg:text-5xl font-bold')}>
+          <h1 className={clsx(poppins.className, h1)}>
             Everything your business needs to stand out
-          </h2>
+          </h1>
         </div>
         <p className="pt-11 pb-20">
           We collaborate with you to develop user-friendly websites, cloud solutions, and tactical software
