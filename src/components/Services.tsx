@@ -3,10 +3,10 @@ import Image from 'next/image';
 
 import DevelopmentImage from '../../public/development-image.png';
 import DocumentCloudIcon from '../../public/document-cloud.svg';
-import NewBuildImage from '../../public/new-build-image.png';
 import SquareNetworkIcon from '../../public/square-network.svg';
 
 import SectionHead from './SectionHead';
+import { NewBuildImage } from './images';
 
 import { poppins } from '@/utils/fonts';
 
@@ -29,7 +29,7 @@ const Services = () => {
               We offer custom web development services to deliver functional and new websites of any size, type, shape,
               and complexity.
             </p>
-            <Image src={NewBuildImage} alt="New Builds image" />
+            <NewBuildImage />
           </div>
         </div>
         <div className="w-full">
