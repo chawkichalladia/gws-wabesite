@@ -1,6 +1,5 @@
 import clsx from 'clsx';
 
-import { h1 } from '@/utils/commonClasses';
 import { poppins } from '@/utils/fonts';
 
 const TECHNOLOGIES = [
@@ -29,7 +28,9 @@ const OurTechnologies = () => {
   return (
     <div className="w-full pb-40">
       <div className="w-full flex justify-center text-center py-20">
-        <h1 className={clsx(poppins.className, h1)}>Technologies we use</h1>
+        <h2 className={clsx(poppins.className, 'text-2xl lg:text-5xl font-bold')}>
+          Technologies we use
+        </h2>
       </div>
       <div className="flex gap-5 -ml-[5%] w-[112%] overflow-hidden">
         {TECHNOLOGIES.map((technology) => (

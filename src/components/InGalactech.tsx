@@ -3,7 +3,6 @@ import Image from 'next/image';
 
 import GalaxyGif from '../../public/galaxy.jpg';
 
-import { h1 } from '@/utils/commonClasses';
 import { poppins } from '@/utils/fonts';
 
 const InGalactech = () => {
@@ -11,9 +10,9 @@ const InGalactech = () => {
     <>
       <div className="w-full flex flex-col items-center justify-center pt-28">
         <div className="w-full flex justify-center text-center">
-          <h1 className={clsx(poppins.className, h1, 'uppercase')}>
+          <h2 className={clsx(poppins.className, 'uppercase text-2xl lg:text-5xl font-bold')}>
             “IN GALACTECH, CREATIVITY HAS NO LIMITS”
-          </h1>
+          </h2>
         </div>
         <Image src={GalaxyGif} alt="galaxy gif" className="py-14 xl:w-[900px] xl:hh-[600px]" />
         <p>
