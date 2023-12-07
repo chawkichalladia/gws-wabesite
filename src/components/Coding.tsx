@@ -1,10 +1,9 @@
 import clsx from 'clsx';
-import Image from 'next/image';
 
-import DigitalTransformationImage from '../../public/digital-transformation.png';
 import MessageIcon from '../../public/message-icon.svg';
 
 import SectionHead from './SectionHead';
+import { DigitalTransformationImage } from './images';
 
 import { poppins } from '@/utils/fonts';
 
@@ -18,11 +17,9 @@ const Coding = () => {
           startups to large corporations with an eye toward expansion and optimization, regardless of the sector in
           which they specialize.
         </p>
-        <Image
-          src={DigitalTransformationImage}
-          alt="Digital transformation image"
-          className="py-24 lg:py-40 md:w-4/5 lg:w-2/3 xl:w-1/2"
-        />
+        <div className='py-24 lg:py-40 w-full md:w-4/5 lg:w-2/3 xl:w-1/2'>
+          <DigitalTransformationImage />
+        </div>
       </div>
       <div className="w-full flex flex-col items-center justify-center">
         <div className="w-full flex justify-center text-center">
