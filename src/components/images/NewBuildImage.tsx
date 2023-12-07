@@ -12,7 +12,7 @@ import WhiteBallImage from '../../../public/new_builds/white_ball.png';
 
 export const NewBuildImage = () => {
   return (
-    <div className={`w-full max-w-[475px] relative aspect-[475/416]`}>
+    <div className="w-full max-w-[475px] relative aspect-[475/416]">
       <Image
         src={SmilingFaceImage}
         alt="Smiling face drawing"
