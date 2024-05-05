@@ -11,7 +11,7 @@ const OurExpertise = () => {
     <div className="w-full">
       <SectionHead image={MedalIcon} label="our expertise" title="web apps and web solutions" />
       <div className="w-full flex flex-col items-center justify-center">
-        <div className="py-20 md:py-32 md:w-4/5 lg:w-2/3 xl:w-1/2">
+        <div className="py-20 md:py-32 w-full md:w-4/5 lg:w-2/3 xl:w-1/2">
           <OurExpertiseImage1 />
         </div>
         <p>
@@ -21,7 +21,7 @@ const OurExpertise = () => {
         </p>
       </div>
       <div className="w-full flex flex-col items-center justify-center">
-        <div className="py-20 md:py-32 md:w-4/5 lg:w-2/3 xl:w-1/2">
+        <div className="py-20 md:py-32 w-full md:w-4/5 lg:w-2/3 xl:w-1/2">
           <OurExpertiseImage2 />
         </div>
         <p>
