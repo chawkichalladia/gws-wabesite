@@ -2,10 +2,9 @@ import clsx from 'clsx';
 import Image from 'next/image';
 
 import MedalIcon from '../../public/medal.svg';
-import WebAppImage2 from '../../public/web-app-2.png';
 
 import SectionHead from './SectionHead';
-import { OurExpertiseImage1 } from './images';
+import { OurExpertiseImage1, OurExpertiseImage2 } from './images';
 
 const OurExpertise = () => {
   return (
@@ -22,7 +21,9 @@ const OurExpertise = () => {
         </p>
       </div>
       <div className="w-full flex flex-col items-center justify-center">
-        <Image src={WebAppImage2} alt="web solutions image" className="py-20 md:py-32 md:w-4/5 lg:w-2/3 xl:w-1/2" />
+        <div className="py-20 md:py-32 md:w-4/5 lg:w-2/3 xl:w-1/2">
+          <OurExpertiseImage2 />
+        </div>
         <p>
           Together, our designers and developers make sure that all projects' creative and technical components are
           cohesive and appropriate for your company's needs.
