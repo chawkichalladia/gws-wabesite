@@ -32,3 +32,17 @@
 p {
   color: #d9d9d9;
 }
+
+.technologies-first-row {
+  animation: scroll 60s linear infinite;
+}
+
+.technologies-second-row {
+  animation: scroll 60s reverse linear infinite;
+}
+
+@keyframes scroll {
+  100% {
+    transform: translateX(calc(-50% - 0.75rem));
+  }
+}
