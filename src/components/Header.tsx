@@ -7,7 +7,7 @@ import { poppins } from '@/utils/fonts';
 
 export const LetsTalkButton = () => {
   return (
-    <button className="bg-white text-black px-3 md:px-6 py-2 md:py-4 text-md md:text-lg rounded-full flex align-items-center gap-2.5 self-center">
+    <button className="bg-white text-black px-3 md:px-6 py-2 md:py-4 text-md md:text-lg rounded-full flex items-center gap-2.5 self-center">
       <div className={poppins.className}>Let's talk</div>
       <div className="flex align-items-center">
         <Image src={ArrowCircleRight} alt="Round right caret" />
