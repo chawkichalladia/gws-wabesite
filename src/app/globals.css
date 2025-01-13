@@ -34,14 +34,14 @@ p {
 }
 
 .technologies-first-row {
-  animation: scroll 60s linear infinite;
+  animation: animate 120s linear infinite;
 }
 
 .technologies-second-row {
-  animation: scroll 60s reverse linear infinite;
+  animation: animate 120s reverse linear infinite;
 }
 
-@keyframes scroll {
+@keyframes animate {
   100% {
     transform: translateX(calc(-50% - 0.75rem));
   }
