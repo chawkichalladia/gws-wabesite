@@ -34,11 +34,11 @@ p {
 }
 
 .technologies-first-row {
-  animation: animate 120s linear infinite;
+  animation: animate 500s linear infinite;
 }
 
 .technologies-second-row {
-  animation: animate 120s reverse linear infinite;
+  animation: animate 500s reverse linear infinite;
 }
 
 @keyframes animate {
