@@ -1,0 +1,28 @@
+import Image from 'next/image';
+
+import GirlWithLaptopAndPopupImage from '../../../public/contact_us/girl_with_laptop_and_popup.png';
+import GoldStarImage from '../../../public/contact_us/gold_star.png';
+import GreyStarImage from '../../../public/contact_us/grey_star.png';
+import MessageImage from '../../../public/contact_us/message.png';
+
+export const ContactUsImage = () => {
+  return (
+    <div className="w-full max-w-[402px] relative aspect-[2016/2254]">
+      <Image src={GirlWithLaptopAndPopupImage} alt="A girl carrying a laptop and leaning on a popup" className="absolute w-full h-full left-0 top-0" />
+      <Image src={GoldStarImage} alt="A gold star from a review" className="absolute w-[7.788%] h-[6.655%] left-[49.107%] top-[19.343%] z-10" />
+      <Image src={GoldStarImage} alt="A gold star from a review" className="absolute w-[7.788%] h-[6.655%] left-[58.879%] top-[19.343%] z-10" />
+      <Image src={GoldStarImage} alt="A gold star from a review" className="absolute w-[7.788%] h-[6.655%] left-[68.651%] top-[19.343%] z-10" />
+      <Image src={GoldStarImage} alt="A gold star from a review" className="absolute w-[7.788%] h-[6.655%] left-[78.423%] top-[19.343%] z-10" />
+      <Image
+        src={GreyStarImage}
+        alt="A grey star from a review"
+        className="absolute w-[7.788%] h-[6.655%] left-[88.194%] top-[19.343%]"
+      />
+      <Image
+        src={MessageImage}
+        alt="Message"
+        className="absolute w-[36.012%] h-[23.824%] left-[63.393%] top-[56.921%]"
+      />
+    </div>
+  );
+};

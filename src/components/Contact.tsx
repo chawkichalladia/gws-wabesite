@@ -1,8 +1,9 @@
 import clsx from 'clsx';
 import Image from 'next/image';
 
-import SmallCircle from '../../public/contact.png';
 import GreyX from '../../public/grey_x.png';
+
+import { ContactUsImage } from './images';
 
 import { poppins } from '@/utils/fonts';
 
@@ -23,13 +24,13 @@ const Contact = ({ open, onClose }: ContactProps) => {
         <div className="absolute right-8 top-5 w-5" onClick={onClose}>
           <Image src={GreyX} alt="Close modal icon" className="w-full aspect-square hover:opacity-70 cursor-pointer" />
         </div>
-        <div className="w-full pl-10 py-12">
+        <div className="w-full pl-10 pt-12">
           <div className="w-full">
             <span className={clsx(poppins.className, 'font-semibold text-3xl text-grey-11')}>
               Hey there!! Let's make something together
             </span>
           </div>
-          <div className="w-full py-10">
+          <div className="w-full pt-10">
             <span className={clsx(poppins.className, 'font-normal text-base text-grey-11')}>
               Want to get in touch? We'd love to hear from you.
             </span>
@@ -37,11 +38,11 @@ const Contact = ({ open, onClose }: ContactProps) => {
         </div>
         <div className="w-1/2 text-left">
           <div className="w-[450px] h-[450px] m-auto">
-            <Image src={SmallCircle} alt="Contact image" className="w-full aspect-square" />
+            <ContactUsImage />
           </div>
         </div>
         <div className="flex w-1/2 flex-col">
-          <div className="w-full">
+          <div className="w-full my-auto">
             <input
               type="text"
               placeholder="Enter your name"
