@@ -15,7 +15,7 @@ const TalkToUs = () => {
           Have a new project in mind, let us explain our tried and true, step-by-step web app creation process.
         </div>
         <div
-          className="bg-grey-1 rounded-3xl lg:rounded-full talk-btn flex justify-center items-center text-white p-4 md:px-6 gap-2 md:gap-4 w-full lg:w-auto whitespace-nowrap cursor-pointer"
+          className="bg-grey-1 rounded-3xl lg:rounded-full talk-btn flex justify-center items-center text-white p-4 md:px-6 gap-2 md:gap-4 w-full lg:w-auto whitespace-nowrap cursor-pointer hover:brightness-[1.3]"
           onClick={toggle}
         >
           <Image src={MessagesIcon} alt="messages icon" width={24} height={24} />

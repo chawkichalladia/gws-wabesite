@@ -16,7 +16,7 @@ export const LetsTalkButton = () => {
     <>
       <button
         onClick={toggle}
-        className="bg-white text-black px-3 md:px-6 py-2 md:py-4 text-md md:text-lg rounded-full flex items-center gap-2.5 self-center"
+        className="bg-white text-black px-3 md:px-6 py-2 md:py-4 text-md md:text-lg rounded-full flex items-center gap-2.5 self-center hover:bg-grey-3"
       >
         <div className={poppins.className}>Let's talk</div>
         <div className="flex align-items-center">
