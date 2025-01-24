@@ -16,8 +16,8 @@ const Contact = ({ open, onClose }: ContactProps) => {
   return (
     <div
       className={clsx(
-        { ['hidden']: !open },
-        'flex w-screen h-screen fixed top-0 left-0 items-center justify-center bg-grey-8 bg-opacity-50 z-50'
+        { ['invisible opacity-0']: !open, ['visible opacity-100']: open },
+        'flex w-screen h-screen fixed top-0 left-0 items-center justify-center bg-grey-8 bg-opacity-50 z-50  transition-[opacity, visibility] duration-700'
       )}
     >
       <div className="flex w-11/12 md:w-2/3 max-w-screen-xl h-4/5 rounded-3xl bg-white relative flex-wrap">
@@ -25,17 +25,14 @@ const Contact = ({ open, onClose }: ContactProps) => {
           <Image src={GreyX} alt="Close modal icon" className="w-full aspect-square hover:opacity-70 cursor-pointer" />
         </div>
         <div className="w-full px-5 md:py-10 pt-12">
-          <div className="w-full text-center md:text-left">
-            <span className={clsx(poppins.className, 'font-semibold text-3xl text-grey-11')}>
-              Hey there!!
-            </span>
-            <br className='md:display-none' />
-            <span className={clsx(poppins.className, 'font-semibold text-3xl text-grey-11')}>
+          <div className="w-full text-center">
+            <div className={clsx(poppins.className, 'font-semibold text-3xl text-grey-11')}>Hey there!!</div>
+            <div className={clsx(poppins.className, 'font-semibold text-3xl text-grey-11')}>
               Let's make something together
-            </span>
+            </div>
           </div>
-          <div className="w-full pt-10 text-center md:text-left">
-            <span className={clsx(poppins.className, 'font-normal text-base text-grey-11')}>
+          <div className="w-full pt-10 text-center">
+            <span className={clsx(poppins.className, 'font-normal text-lg text-grey-11')}>
               Want to get in touch? We'd love to hear from you.
             </span>
           </div>
