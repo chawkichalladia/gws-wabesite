@@ -1,18 +1,17 @@
 import clsx from 'clsx';
 import Image from 'next/image';
+import { useContext } from 'react';
 
 import GreyX from '../../public/grey_x.png';
 
 import { ContactUsImage } from './images';
 
+import { GlobalContext } from '@/context';
 import { poppins } from '@/utils/fonts';
 
-interface ContactProps {
-  open: boolean;
-  onClose: () => void;
-}
+const Contact = () => {
+  const { open, toggle } = useContext(GlobalContext);
 
-const Contact = ({ open, onClose }: ContactProps) => {
   return (
     <div
       className={clsx(
@@ -21,7 +20,7 @@ const Contact = ({ open, onClose }: ContactProps) => {
       )}
     >
       <div className="flex w-11/12 md:w-2/3 max-w-screen-xl h-4/5 rounded-3xl bg-white relative flex-wrap">
-        <div className="absolute right-8 top-5 w-5" onClick={onClose}>
+        <div className="absolute right-8 top-5 w-5" onClick={toggle}>
           <Image src={GreyX} alt="Close modal icon" className="w-full aspect-square hover:opacity-70 cursor-pointer" />
         </div>
         <div className="w-full px-5 md:py-10 pt-12">

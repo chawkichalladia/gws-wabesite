@@ -1,11 +1,15 @@
 import clsx from 'clsx';
 import Image from 'next/image';
+import { useContext } from 'react';
 
 import DiamondImg from '../../public/diamond.svg';
 
+import { GlobalContext } from '@/context';
 import { orion_pax, poppins } from '@/utils/fonts';
 
 const Landing = () => {
+  const { toggle } = useContext(GlobalContext);
+
   return (
     <div className="w-full h-screen flex items-center justify-center flex-col">
       <div className="flex items-center justify-center text-center flex-col gap-y-7">
@@ -35,7 +39,10 @@ const Landing = () => {
         <p className="text-sm lg:text-xl px-3 lg:pb-10">
           We are a web development company that helps businesses develop functional and reliable web solutions.
         </p>
-        <button className={clsx(poppins.className, 'py-2 lg:py-4 w-48 lg:w-60 bg-blue-primary rounded-lg')}>
+        <button
+          onClick={toggle}
+          className={clsx(poppins.className, 'py-2 lg:py-4 w-48 lg:w-60 bg-blue-primary rounded-lg')}
+        >
           Get in touch
         </button>
       </div>
