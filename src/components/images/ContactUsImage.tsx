@@ -20,9 +20,39 @@ export const ContactUsImage = () => {
         className={clsx('absolute w-0 h-0 left-0 bottom-0', { ['contact-image-person']: open })}
       />
       <Image
+        src={GoldStarImage}
+        alt="A gold star from a review"
+        className={clsx('absolute w-[7.788%] h-[6.655%] left-[49.107%] top-[19.343%] z-10 opacity-0', {
+          ['contact-first-star']: open,
+        })}
+      />
+      <Image
+        src={GoldStarImage}
+        alt="A gold star from a review"
+        className={clsx('absolute w-[7.788%] h-[6.655%] left-[58.879%] top-[19.343%] z-10 opacity-0', {
+          ['contact-second-star']: open,
+        })}
+      />
+      <Image
+        src={GoldStarImage}
+        alt="A gold star from a review"
+        className={clsx('absolute w-[7.788%] h-[6.655%] left-[68.651%] top-[19.343%] z-10 opacity-0', {
+          ['contact-third-star']: open,
+        })}
+      />
+      <Image
+        src={GoldStarImage}
+        alt="A gold star from a review"
+        className={clsx('absolute w-[7.788%] h-[6.655%] left-[78.423%] top-[19.343%] z-10 opacity-0', {
+          ['contact-fourth-star']: open,
+        })}
+      />
+      <Image
         src={GreyStarImage}
         alt="A grey star from a review"
-        className="absolute w-[7.788%] h-[6.655%] left-[88.194%] top-[19.343%]"
+        className={clsx('absolute w-[7.788%] h-[6.655%] left-[88.194%] top-[19.343%] opacity-0', {
+          ['contact-fifth-star']: open,
+        })}
       />
       <Image
         src={MessageImage}

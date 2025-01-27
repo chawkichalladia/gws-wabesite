@@ -46,6 +46,31 @@ p {
   animation-delay: 200ms;
 }
 
+.contact-first-star {
+  animation: animate-contact-star 10s linear forwards;
+  animation-delay: 1s;
+}
+
+.contact-second-star {
+  animation: animate-contact-star 10s linear forwards;
+  animation-delay: 2s;
+}
+
+.contact-third-star {
+  animation: animate-contact-star 10s linear forwards;
+  animation-delay: 3s;
+}
+
+.contact-fourth-star {
+  animation: animate-contact-star 10s linear forwards;
+  animation-delay: 4s;
+}
+
+.contact-fifth-star {
+  animation: animate-contact-star 10s linear forwards;
+  animation-delay: 5s;
+}
+
 @keyframes animate {
   100% {
     transform: translateX(calc(-50% - 0.75rem));
@@ -70,5 +95,47 @@ p {
   80% {
     height: 93%;
     width: 93%;
+  }
+}
+
+@keyframes animate-contact-star {
+  0% {
+    opacity: 0;
+  }
+  15% {
+    opacity: 0.5;
+  }
+  30% {
+    opacity: 0.9;
+  }
+  40%,
+  100% {
+    opacity: 1;
+  }
+  0%,
+  100% {
+    rotate: 0;
+  }
+  10%,
+  12%,
+  30%,
+  32%,
+  50%,
+  52%,
+  70%,
+  72%,
+  90%,
+  92% {
+    rotate: 30deg;
+  }
+  20%,
+  22%,
+  40%,
+  42%,
+  60%,
+  62%,
+  80%,
+  82% {
+    rotate: -30deg;
   }
 }
