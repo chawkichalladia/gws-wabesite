@@ -41,8 +41,34 @@ p {
   animation: animate 500s reverse linear infinite;
 }
 
+.contact-image-person {
+  animation: expand-contact-person-height 500ms ease-out forwards;
+  animation-delay: 200ms;
+}
+
 @keyframes animate {
   100% {
     transform: translateX(calc(-50% - 0.75rem));
+  }
+}
+
+@keyframes expand-contact-person-height {
+  0% {
+    height: 0;
+    width: 0;
+  }
+  20%,
+  60%,
+  100% {
+    height: 100%;
+    width: 100%;
+  }
+  40% {
+    height: 80%;
+    width: 80%;
+  }
+  80% {
+    height: 93%;
+    width: 93%;
   }
 }
