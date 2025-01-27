@@ -12,7 +12,7 @@ import { poppins } from '@/utils/fonts';
 const Contact = () => {
   const { open, toggle } = useContext(GlobalContext);
 
-  return (
+  return open ? (
     <div
       className={clsx(
         { ['invisible opacity-0']: !open, ['visible opacity-100']: open },
@@ -69,7 +69,7 @@ const Contact = () => {
         </div>
       </div>
     </div>
-  );
+  ) : null;
 };
 
 export default Contact;
