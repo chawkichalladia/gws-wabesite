@@ -42,33 +42,37 @@ p {
 }
 
 .contact-image-person {
-  animation: expand-contact-person-height 500ms ease-out forwards;
+  animation: expand-contact-person 2s ease-out forwards;
   animation-delay: 200ms;
 }
 
 .contact-first-star {
-  animation: animate-contact-star 10s linear forwards;
-  animation-delay: 1s;
+  animation: animate-contact-star 6s linear forwards;
+  animation-delay: 2.5s;
 }
 
 .contact-second-star {
-  animation: animate-contact-star 10s linear forwards;
-  animation-delay: 2s;
+  animation: animate-contact-star 6s linear forwards;
+  animation-delay: 3.5s;
 }
 
 .contact-third-star {
-  animation: animate-contact-star 10s linear forwards;
-  animation-delay: 3s;
+  animation: animate-contact-star 6s linear forwards;
+  animation-delay: 4.5s;
 }
 
 .contact-fourth-star {
-  animation: animate-contact-star 10s linear forwards;
-  animation-delay: 4s;
+  animation: animate-contact-star 6s linear forwards;
+  animation-delay: 5.5s;
 }
 
 .contact-fifth-star {
-  animation: animate-contact-star 10s linear forwards;
-  animation-delay: 5s;
+  animation: animate-contact-star 6s linear forwards;
+  animation-delay: 6.5s;
+}
+
+.contact-image-message {
+  animation: expand-contact-message-size 700ms ease-in 2s forwards;
 }
 
 @keyframes animate {
@@ -77,7 +81,7 @@ p {
   }
 }
 
-@keyframes expand-contact-person-height {
+@keyframes expand-contact-person {
   0% {
     height: 0;
     width: 0;
@@ -137,5 +141,34 @@ p {
   80%,
   82% {
     rotate: -30deg;
+  }
+}
+
+@keyframes expand-contact-message-size {
+  0% {
+    height: 0;
+    width: 0;
+    right: 0;
+    bottom: 0;
+  }
+  5%,
+  15%,
+  25% {
+    height: 23.824%;
+    width: 36.012%;
+  }
+  10% {
+    height: 19.06%;
+    width: 28.81%;
+  }
+  20% {
+    height: 22.156%;
+    width: 33.491%;
+  }
+  100% {
+    width: 36.012%;
+    height: 23.824%;
+    right: 5%;
+    bottom: 19.255%;
   }
 }
