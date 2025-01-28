@@ -100,6 +100,51 @@ p {
   animation-timeline: view(70% 10%);
 }
 
+.new-build-person {
+  animation: show-new-build-person linear forwards;
+  animation-timeline: view(70% 10%);
+}
+
+.new-build-lightbulb {
+  animation: show-new-build-lightbulb linear forwards;
+  animation-timeline: view(40% 30%);
+}
+
+.new-build-smile {
+  animation: show-new-build-smile linear forwards;
+  animation-timeline: view(25% 40%);
+}
+
+.new-build-gear {
+  animation: show-new-build-gear linear forwards;
+  animation-timeline: view(25% 40%);
+}
+
+.new-build-laptop {
+  animation: show-new-build-laptop linear forwards;
+  animation-timeline: view(25% 40%);
+}
+
+.new-build-white-ball {
+  animation: show-new-build-white-ball linear forwards;
+  animation-timeline: view(25% 40%);
+}
+
+.new-build-laugh {
+  animation: show-new-build-laugh linear forwards;
+  animation-timeline: view(25% 40%);
+}
+
+.new-build-list {
+  animation: show-new-build-list linear forwards;
+  animation-timeline: view(25% 40%);
+}
+
+.new-build-music-note {
+  animation: show-new-build-music-note linear forwards;
+  animation-timeline: view(25% 40%);
+}
+
 @keyframes animate {
   100% {
     transform: translateX(calc(-50% - 0.75rem));
@@ -214,6 +259,9 @@ p {
     rotate: 180deg;
     translate: 100% -350%;
   }
+  50% {
+    opacity: 0.25;
+  }
   100% {
     opacity: 1;
     rotate: 0deg;
@@ -249,5 +297,96 @@ p {
   100% {
     opacity: 1;
     translate: 0;
+  }
+}
+
+@keyframes show-new-build-person {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: 83.17%;
+  }
+}
+
+@keyframes show-new-build-lightbulb {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes show-new-build-smile {
+  0% {
+    opacity: 0;
+    translate: -100% 200%;
+  }
+  100% {
+    opacity: 1;
+    translate: 0 0;
+  }
+}
+
+@keyframes show-new-build-gear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes show-new-build-laptop {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes show-new-build-white-ball {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes show-new-build-laugh {
+  0% {
+    opacity: 0;
+    translate: -75% 300%;
+  }
+  50% {
+    opacity: 0.25;
+  }
+  100% {
+    opacity: 1;
+    translate: 0 0;
+  }
+}
+
+@keyframes show-new-build-music-note {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.25;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes show-new-build-list {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 23.37%;
   }
 }
