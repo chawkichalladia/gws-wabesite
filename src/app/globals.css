@@ -76,73 +76,59 @@ p {
 }
 
 .development-x {
-  animation: show-development-x linear forwards;
-  animation-timeline: view(30% 10%);
+  animation: show-development-x 700ms linear forwards;
 }
 
 .development-left-box {
-  animation: show-development-left-box linear forwards;
-  animation-timeline: view(60% 0);
+  animation: show-development-left-box 700ms linear forwards;
 }
 
 .development-right-box {
-  animation: show-development-right-box linear forwards;
-  animation-timeline: view(30% 10%);
+  animation: show-development-right-box 700ms linear forwards;
 }
 
 .development-circle {
-  animation: show-development-circle linear forwards;
-  animation-timeline: view(50% 10%);
+  animation: show-development-circle 700ms linear forwards;
 }
 
 .development-person {
-  animation: show-development-person linear forwards;
-  animation-timeline: view(70% 10%);
+  animation: show-development-person 700ms linear forwards;
 }
 
 .new-build-person {
-  animation: show-new-build-person linear forwards;
-  animation-timeline: view(70% 10%);
+  animation: show-new-build-person 700ms linear forwards;
 }
 
 .new-build-lightbulb {
-  animation: show-new-build-lightbulb linear forwards;
-  animation-timeline: view(40% 30%);
+  animation: show-new-build-lightbulb 700ms linear forwards;
 }
 
 .new-build-smile {
-  animation: show-new-build-smile linear forwards;
-  animation-timeline: view(25% 40%);
+  animation: show-new-build-smile 700ms linear forwards;
 }
 
 .new-build-gear {
-  animation: show-new-build-gear linear forwards;
-  animation-timeline: view(25% 40%);
+  animation: show-new-build-gear 700ms linear forwards;
 }
 
 .new-build-laptop {
-  animation: show-new-build-laptop linear forwards;
-  animation-timeline: view(25% 40%);
+  animation: show-new-build-laptop 700ms linear forwards;
 }
 
 .new-build-white-ball {
-  animation: show-new-build-white-ball linear forwards;
-  animation-timeline: view(25% 40%);
+  animation: show-new-build-white-ball 700ms linear forwards;
 }
 
 .new-build-laugh {
-  animation: show-new-build-laugh linear forwards;
-  animation-timeline: view(25% 40%);
+  animation: show-new-build-laugh 700ms linear forwards;
 }
 
 .new-build-list {
-  animation: show-new-build-list linear forwards;
-  animation-timeline: view(25% 40%);
+  animation: show-new-build-list 700ms linear forwards;
 }
 
 .new-build-music-note {
-  animation: show-new-build-music-note linear forwards;
-  animation-timeline: view(25% 40%);
+  animation: show-new-build-music-note 700ms linear forwards;
 }
 
 @keyframes animate {
