@@ -131,6 +131,30 @@ p {
   animation: show-new-build-music-note 700ms linear forwards;
 }
 
+.digital-transformation-small-circle {
+  animation: show-digital-transformation-small-circle 700ms linear forwards;
+}
+
+.digital-transformation-big-circle {
+  animation: show-digital-transformation-big-circle 700ms linear forwards;
+}
+
+.digital-transformation-person {
+  animation: show-digital-transformation-person 700ms linear forwards;
+}
+
+.digital-transformation-sphere {
+  animation: show-digital-transformation-sphere 700ms linear forwards;
+}
+
+.digital-transformation-planet {
+  animation: show-digital-transformation-planet 700ms linear forwards;
+}
+
+.digital-transformation-rocket {
+  animation: show-digital-transformation-rocket 700ms linear 400ms forwards;
+}
+
 @keyframes animate {
   100% {
     transform: translateX(calc(-50% - 0.75rem));
@@ -374,5 +398,91 @@ p {
   }
   100% {
     width: 23.37%;
+  }
+}
+
+@keyframes show-digital-transformation-small-circle {
+  0% {
+    opacity: 0;
+    translate: 0 2000%;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    translate: 0 0;
+  }
+}
+
+@keyframes show-digital-transformation-big-circle {
+  0% {
+    opacity: 0;
+    translate: 0 1500%;
+  }
+  50% {
+    opacity: 1;
+    translate: 0 750%;
+  }
+  100% {
+    opacity: 1;
+    translate: 0 0;
+  }
+}
+
+@keyframes show-digital-transformation-person {
+  0% {
+    opacity: 0;
+    translate: 0 100%;
+  }
+  50% {
+    opacity: 1;
+    translate: 0 50%;
+  }
+  100% {
+    opacity: 1;
+    translate: 0 0;
+  }
+}
+
+@keyframes show-digital-transformation-sphere {
+  0% {
+    opacity: 0;
+    translate: 0 300%;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    translate: 0 0;
+  }
+}
+
+@keyframes show-digital-transformation-planet {
+  0% {
+    opacity: 0;
+    translate: 0 1000%;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    translate: 0 0;
+  }
+}
+
+@keyframes show-digital-transformation-rocket {
+  0% {
+    opacity: 0;
+    translate: 300% 300%;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    translate: 0 0;
   }
 }
