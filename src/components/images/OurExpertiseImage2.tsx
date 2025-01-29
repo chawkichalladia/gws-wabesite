@@ -1,3 +1,4 @@
+import clsx from 'clsx';
 import Image from 'next/image';
 
 import Desktop from '../../../public/our_expertise/desktop.png';
@@ -5,20 +6,40 @@ import Laptop from '../../../public/our_expertise/laptop.png';
 import Person from '../../../public/our_expertise/person.png';
 import Table from '../../../public/our_expertise/table.png';
 
+import { useViewPortIntersectionObserver } from '@/hooks';
+
 export const OurExpertiseImage2 = () => {
+  const { intersected, ref } = useViewPortIntersectionObserver({ threshold: 0.6 });
+
   return (
-    <div className="w-full max-w-[1500px] relative aspect-[1124/419]">
-      <Image src={Desktop} alt="A desktop computer with other icons" className="absolute w-[20.552%] h-[48.926%] left-[73.31%] top-[4.296%] z-20" />
-      <Image src={Laptop} alt="A laptop with software windows open" className="absolute w-[19.929%] h-[42.005%] left-[11.744%] top-[10.74%] z-20" />
+    <div className="w-full max-w-[1500px] relative aspect-[1124/419]" ref={ref}>
+      <Image
+        src={Desktop}
+        alt="A desktop computer with other icons"
+        className={clsx('absolute w-[20.552%] h-[48.926%] left-1/2 top-full opacity-0 z-20', {
+          ['our-expertise-second-image-desktop']: intersected,
+        })}
+      />
+      <Image
+        src={Laptop}
+        alt="A laptop with software windows open"
+        className={clsx('absolute w-[19.929%] h-[42.005%] left-1/2 top-full opacity-0 z-20', {
+          ['our-expertise-second-image-laptop']: intersected,
+        })}
+      />
       <Image
         src={Person}
         alt="A sitting person with a laptop on their lap"
-        className="absolute w-[13.79%] h-[80.191%] left-[42.883%] top-[6.683%] z-20"
+        className={clsx('absolute w-0 h-0 left-1/2 bottom-1/2 z-20', {
+          ['our-expertise-second-image-person']: intersected,
+        })}
       />
       <Image
         src={Table}
         alt="A white table"
-        className="absolute w-full h-[54.177%] left-0 bottom-0 z-10"
+        className={clsx('absolute w-0 h-0 left-1/2 bottom-1/2 z-10', {
+          ['our-expertise-second-image-table']: intersected,
+        })}
       />
     </div>
   );
