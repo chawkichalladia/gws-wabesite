@@ -76,59 +76,59 @@ p {
 }
 
 .development-x {
-  animation: show-development-x 700ms linear forwards;
+  animation: show-development-x 1s linear 300ms forwards;
 }
 
 .development-left-box {
-  animation: show-development-left-box 700ms linear forwards;
+  animation: show-development-left-box 1s linear 200ms forwards;
 }
 
 .development-right-box {
-  animation: show-development-right-box 700ms linear forwards;
+  animation: show-development-right-box 1s ease-in 300ms forwards;
 }
 
 .development-circle {
-  animation: show-development-circle 700ms linear forwards;
+  animation: show-development-circle 1s linear 400ms forwards;
 }
 
 .development-person {
-  animation: show-development-person 700ms linear forwards;
+  animation: show-development-person 1s linear forwards;
 }
 
 .new-build-person {
-  animation: show-new-build-person 700ms linear forwards;
+  animation: show-new-build-person 1s linear forwards;
 }
 
 .new-build-lightbulb {
-  animation: show-new-build-lightbulb 700ms linear forwards;
+  animation: show-new-build-lightbulb 1400ms linear forwards;
 }
 
 .new-build-smile {
-  animation: show-new-build-smile 700ms linear forwards;
+  animation: show-new-build-smile 1s ease-in 300ms forwards;
 }
 
 .new-build-gear {
-  animation: show-new-build-gear 700ms linear forwards;
-}
-
-.new-build-laptop {
-  animation: show-new-build-laptop 700ms linear forwards;
+  animation: show-new-build-gear 1s linear 300ms forwards;
 }
 
 .new-build-white-ball {
-  animation: show-new-build-white-ball 700ms linear forwards;
+  animation: show-new-build-white-ball 1s linear 300ms forwards;
+}
+
+.new-build-laptop {
+  animation: show-new-build-laptop 1100ms linear 500ms forwards;
 }
 
 .new-build-laugh {
-  animation: show-new-build-laugh 700ms linear forwards;
+  animation: show-new-build-laugh 1100ms ease-in 500ms forwards;
 }
 
 .new-build-list {
-  animation: show-new-build-list 700ms linear forwards;
+  animation: show-new-build-list 1200ms linear 600ms forwards;
 }
 
 .new-build-music-note {
-  animation: show-new-build-music-note 700ms linear forwards;
+  animation: show-new-build-music-note 1200ms linear 600ms forwards;
 }
 
 .digital-transformation-small-circle {
@@ -288,10 +288,12 @@ p {
 @keyframes show-development-x {
   0% {
     width: 0;
+    left: 52.16%;
   }
 
   100% {
     width: 4.76%;
+    left: 49.78%;
   }
 }
 

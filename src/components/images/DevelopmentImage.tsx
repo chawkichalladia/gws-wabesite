@@ -17,7 +17,7 @@ export const DevelopmentImage = () => {
       <Image
         src={XImage}
         alt="X icon image"
-        className={clsx('absolute w-0 h-[5.25%] left-[49.78%] top-[1.83%]', { ['development-x']: intersected })}
+        className={clsx('absolute w-0 h-[5.25%] left-[52.16%] top-[1.83%]', { ['development-x']: intersected })}
       />
       <Image
         src={LeftBoxImage}
