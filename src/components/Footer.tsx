@@ -27,7 +27,7 @@ const Footer = () => {
           </div>
         </div>
         <hr className='border-grey-1 w-full' />
-        <div className="container text-center text-xs xl:text-sm">Galactech Web Solutions © All rights reserved - 2023.</div>
+        <div className="container text-center text-xs xl:text-sm">Galactech Web Solutions © All rights reserved - 2025.</div>
       </div>
     </footer>
   );
