@@ -4,6 +4,7 @@ import { useContext } from 'react';
 
 import GreyX from '../../public/grey_x.png';
 
+import { ContactForm } from './ContactForm';
 import { ContactUsImage } from './images';
 
 import { GlobalContext } from '@/context';
@@ -41,32 +42,7 @@ const Contact = () => {
             <ContactUsImage />
           </div>
         </div>
-        <div className="flex w-full md:w-1/2 justify-center items-center">
-          <div className="w-3/4">
-            <input
-              type="text"
-              placeholder="Enter your name"
-              className="w-full rounded-lg outline-none border-none h-12 mb-4 text-base p-2 text-grey-6 bg-blue-primary bg-opacity-5"
-            />
-            <input
-              type="email"
-              placeholder="Enter your email address"
-              className="w-full rounded-lg outline-none border-none h-12 mb-4 text-grey-6 bg-blue-primary bg-opacity-5 text-base p-2"
-            />
-            <input
-              type="text"
-              placeholder="Subject"
-              className="w-full rounded-lg outline-none border-none h-12 mb-4 text-grey-6 bg-blue-primary bg-opacity-5 text-base p-2"
-            />
-            <textarea
-              placeholder="Message"
-              className="w-full rounded-lg outline-none border-none h-32 mb-4 text-grey-6 bg-blue-primary bg-opacity-5 resize-none text-base p-2"
-            ></textarea>
-            <button className="w-full rounded-lg outline-none border-none h-10 font-medium text-xl text-white bg-blue-primary shadow-[0_4px_31px_0_rgba(0,62,221,0.3)]">
-              Submit
-            </button>
-          </div>
-        </div>
+        <ContactForm />
       </div>
     </div>
   ) : null;

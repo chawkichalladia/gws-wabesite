@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@property --input-gradient-angle {
+  syntax: '<angle>';
+  initial-value: 360deg;
+  inherits: false;
+}
+
 .earth-bg {
   background-image: url('../../public/earth-bg.png');
 }
@@ -27,6 +33,11 @@
 
 .technology-tag {
   background-image: linear-gradient(to bottom, #36aeff, #0037dc);
+}
+
+.input-border {
+  background: conic-gradient(from var(--input-gradient-angle), #0037dc 0%, #88caf7 50%, #0037dc 70%, #88caf7 100%);
+  animation: input-border 4s linear infinite;
 }
 
 p {
@@ -190,6 +201,40 @@ p {
 @keyframes animate {
   100% {
     transform: translateX(calc(-50% - 0.75rem));
+  }
+}
+
+@keyframes input-border {
+  0%,
+  100% {
+    --input-gradient-angle: 0deg;
+  }
+  11% {
+    --input-gradient-angle: 40deg;
+  }
+  22% {
+    --input-gradient-angle: 80deg;
+  }
+  33% {
+    --input-gradient-angle: 120deg;
+  }
+  44% {
+    --input-gradient-angle: 160deg;
+  }
+  55% {
+    --input-gradient-angle: 200deg;
+  }
+  66% {
+    --input-gradient-angle: 240deg;
+  }
+  77% {
+    --input-gradient-angle: 280deg;
+  }
+  88% {
+    --input-gradient-angle: 320deg;
+  }
+  99.99% {
+    --input-gradient-angle: 360deg;
   }
 }
 
