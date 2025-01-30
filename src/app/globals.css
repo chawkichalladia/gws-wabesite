@@ -48,31 +48,31 @@ p {
 
 .contact-first-star {
   animation: animate-contact-star 6s linear forwards;
-  animation-delay: 2.5s;
+  animation-delay: 1s;
 }
 
 .contact-second-star {
   animation: animate-contact-star 6s linear forwards;
-  animation-delay: 3.5s;
+  animation-delay: 2s;
 }
 
 .contact-third-star {
   animation: animate-contact-star 6s linear forwards;
-  animation-delay: 4.5s;
+  animation-delay: 3s;
 }
 
 .contact-fourth-star {
   animation: animate-contact-star 6s linear forwards;
-  animation-delay: 5.5s;
+  animation-delay: 4s;
 }
 
 .contact-fifth-star {
   animation: animate-contact-star 6s linear forwards;
-  animation-delay: 6.5s;
+  animation-delay: 5s;
 }
 
 .contact-image-message {
-  animation: expand-contact-message-size 700ms ease-in 2s forwards;
+  animation: expand-contact-message-size 700ms ease-in 1s forwards;
 }
 
 .development-x {
@@ -260,28 +260,10 @@ p {
   0% {
     height: 0;
     width: 0;
-    right: 0;
-    bottom: 0;
-  }
-  5%,
-  15%,
-  25% {
-    height: 23.824%;
-    width: 36.012%;
-  }
-  10% {
-    height: 19.06%;
-    width: 28.81%;
-  }
-  20% {
-    height: 22.156%;
-    width: 33.491%;
   }
   100% {
     width: 36.012%;
     height: 23.824%;
-    right: 5%;
-    bottom: 19.255%;
   }
 }
 

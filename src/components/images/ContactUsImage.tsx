@@ -57,7 +57,7 @@ export const ContactUsImage = () => {
       <Image
         src={MessageImage}
         alt="Message"
-        className={clsx('absolute w-0 h-0 right-0 bottom-0', {
+        className={clsx('absolute w-0 h-0 right-0 bottom-[19.255%]', {
           ['contact-image-message']: open,
         })}
       />
