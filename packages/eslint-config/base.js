@@ -56,7 +56,7 @@ export const baseConfigs = [
   {
     rules: {
       '@typescript-eslint/no-unused-vars': ['warn'],
-      '@typescript-eslint/no-empty-object-type': ['warn'],
+      '@typescript-eslint/no-empty-object-type': ['warn', { allowInterfaces: 'with-single-extends' }],
     },
   },
   {
