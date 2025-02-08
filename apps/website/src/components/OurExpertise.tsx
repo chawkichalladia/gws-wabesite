@@ -1,6 +1,3 @@
-import clsx from 'clsx';
-import Image from 'next/image';
-
 import MedalIcon from '../../public/medal.svg';
 
 import SectionHead from './SectionHead';

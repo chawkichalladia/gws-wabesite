@@ -1,4 +1,4 @@
-import clsx from 'clsx';
+import { clsx } from 'clsx';
 import Image from 'next/image';
 
 import Logo from '../../public/logo.png';
@@ -15,19 +15,21 @@ const Footer = () => {
         <div className="w-full flex flex-col xl:flex-row xl:justify-around gap-8">
           <div className="flex flex-col gap-1 items-center xl:items-start text-center">
             <span className={clsx(poppins.className, 'capitalize font-bold')}>Email</span>
-            <span className='text-lg'>contact@galactechwebsolution.com</span>
+            <span className="text-lg">contact@galactechwebsolution.com</span>
           </div>
           <div className="flex flex-col gap-1 items-center xl:items-start text-center">
             <span className={clsx(poppins.className, 'capitalize font-bold')}>Phone</span>
-            <span className='text-lg'>+216 26 561 334</span>
+            <span className="text-lg">+216 26 561 334</span>
           </div>
           <div className="flex flex-col gap-1 items-center xl:items-start text-center">
             <span className={clsx(poppins.className, 'capitalize font-bold')}>Address</span>
-            <span className='text-lg'>08 Rue Bizerte Ain Zaghouan Tunis - Tunisia</span>
+            <span className="text-lg">08 Rue Bizerte Ain Zaghouan Tunis - Tunisia</span>
           </div>
         </div>
-        <hr className='border-grey-1 w-full' />
-        <div className="container text-center text-xs xl:text-sm">Galactech Web Solutions © All rights reserved - 2025.</div>
+        <hr className="border-grey-1 w-full" />
+        <div className="container text-center text-xs xl:text-sm">
+          Galactech Web Solutions © All rights reserved - 2025.
+        </div>
       </div>
     </footer>
   );

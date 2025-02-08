@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { useContext, useState } from 'react';
+import { useContext } from 'react';
 
 import ArrowCircleRight from '../../public/arrow-circle-right.svg';
 import Logo from '../../public/logo.png';

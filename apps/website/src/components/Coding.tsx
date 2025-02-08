@@ -1,4 +1,4 @@
-import clsx from 'clsx';
+import { clsx } from 'clsx';
 
 import MessageIcon from '../../public/message-icon.svg';
 
@@ -17,7 +17,7 @@ const Coding = () => {
           startups to large corporations with an eye toward expansion and optimization, regardless of the sector in
           which they specialize.
         </p>
-        <div className='py-24 lg:py-40 w-full md:w-4/5 lg:w-2/3 xl:w-1/2'>
+        <div className="py-24 lg:py-40 w-full md:w-4/5 lg:w-2/3 xl:w-1/2">
           <DigitalTransformationImage />
         </div>
       </div>

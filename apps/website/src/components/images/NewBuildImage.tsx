@@ -1,4 +1,4 @@
-import clsx from 'clsx';
+import { clsx } from 'clsx';
 import Image from 'next/image';
 
 import GearImage from '../../../public/new_builds/gear.png';

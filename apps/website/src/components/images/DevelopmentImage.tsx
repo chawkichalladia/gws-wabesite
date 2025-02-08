@@ -1,4 +1,4 @@
-import clsx from 'clsx';
+import { clsx } from 'clsx';
 import Image from 'next/image';
 
 import CircleImage from '../../../public/development/circle.png';
@@ -22,22 +22,30 @@ export const DevelopmentImage = () => {
       <Image
         src={LeftBoxImage}
         alt="TV image"
-        className={clsx("absolute w-[40.91%] h-[34.25%] left-0 top-[10.73%] z-10 opacity-0", { ['development-left-box']: intersected })}
+        className={clsx('absolute w-[40.91%] h-[34.25%] left-0 top-[10.73%] z-10 opacity-0', {
+          ['development-left-box']: intersected,
+        })}
       />
       <Image
         src={SittingManImage}
         alt="A man sitting with a laptop on his lap"
-        className={clsx("absolute w-[49.35%] h-[81.51%] left-[19.48%] top-[13.39%] opacity-0 z-10", { ['development-person']: intersected })}
+        className={clsx('absolute w-[49.35%] h-[81.51%] left-[19.48%] top-[13.39%] opacity-0 z-10', {
+          ['development-person']: intersected,
+        })}
       />
       <Image
         src={RightBoxImage}
         alt="Abstract image of a TV"
-        className={clsx("absolute w-[29.87%] h-[21.46%] right-0 top-[39.04%] opacity-0", { ['development-right-box']: intersected })}
+        className={clsx('absolute w-[29.87%] h-[21.46%] right-0 top-[39.04%] opacity-0', {
+          ['development-right-box']: intersected,
+        })}
       />
       <Image
         src={CircleImage}
         alt="Circle icon image"
-        className={clsx("absolute w-[3.68%] h-[3.88%] left-[83.77%] top-[64.61%] opacity-0", { ['development-circle']: intersected })}
+        className={clsx('absolute w-[3.68%] h-[3.88%] left-[83.77%] top-[64.61%] opacity-0', {
+          ['development-circle']: intersected,
+        })}
       />
     </div>
   );

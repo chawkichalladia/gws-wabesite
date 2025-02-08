@@ -1,4 +1,4 @@
-import clsx from 'clsx';
+import { clsx } from 'clsx';
 import Image from 'next/image';
 
 import BigCircle from '../../../public/digital_transformation/big_circle.png';

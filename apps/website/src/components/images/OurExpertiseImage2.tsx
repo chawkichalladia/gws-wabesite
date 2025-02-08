@@ -1,4 +1,4 @@
-import clsx from 'clsx';
+import { clsx } from 'clsx';
 import Image from 'next/image';
 
 import Desktop from '../../../public/our_expertise/desktop.png';

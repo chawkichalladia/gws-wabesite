@@ -1,4 +1,4 @@
-import clsx from 'clsx';
+import { clsx } from 'clsx';
 import Image from 'next/image';
 import { useContext } from 'react';
 
@@ -41,7 +41,10 @@ const Landing = () => {
         </p>
         <button
           onClick={toggle}
-          className={clsx(poppins.className, 'py-2 lg:py-4 w-48 lg:w-60 bg-blue-primary rounded-lg hover:brightness-[1.3]')}
+          className={clsx(
+            poppins.className,
+            'py-2 lg:py-4 w-48 lg:w-60 bg-blue-primary rounded-lg hover:brightness-[1.3]'
+          )}
         >
           Get in touch
         </button>
