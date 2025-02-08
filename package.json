@@ -3,7 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "format": "prettier",
+    "format": "prettier --write --ignore-unknown",
+    "format:check": "prettier . --check",
     "prepare": "husky install"
   },
   "workspaces": [
