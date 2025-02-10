@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint --max-warnings 0"
+    "lint": "eslint --max-warnings 0",
+    "lint:fix": "eslint --fix --max-warnings 0",
+    "lint:fix-all": "eslint . --fix --max-warnings 0"
   },
   "dependencies": {
     "clsx": "^2.0.0",
@@ -21,12 +23,11 @@
     "@types/react-dom": "18.2.7",
     "autoprefixer": "10.4.15",
     "postcss": "8.4.28",
-    "tailwindcss": "3.3.3"
+    "tailwindcss": "3.3.3",
+    "eslint": "^9.20.0",
+    "typescript": "5.2.2"
   },
   "lint-staged": {
-    "*.{ts,tsx}": [
-      "yarn format",
-      "yarn workspace website run lint"
-    ]
+    "*.{ts,tsx}": "yarn lint:fix"
   }
 }

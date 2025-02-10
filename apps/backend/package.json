@@ -1,0 +1,29 @@
+{
+  "name": "backend",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build": "rimraf dist && tsc",
+    "lint": "eslint --max-warnings 0",
+    "lint:fix": "eslint --fix --max-warnings 0",
+    "lint:fix-all": "eslint . --fix --max-warnings 0"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "serverless-http": "^3.2.0"
+  },
+  "devDependencies": {
+    "@packages/eslint-config": "*",
+    "@packages/tsconfig": "*",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "eslint": "^9.20.0",
+    "rimraf": "^6.0.1",
+    "ts-node": "^10.9.2",
+    "typescript": "5.2.2"
+  },
+  "lint-staged": {
+    "*.ts": "yarn lint:fix"
+  }
+}
