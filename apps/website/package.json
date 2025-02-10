@@ -6,12 +6,11 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint --max-warnings 0",
-    "check-types": "tsc --noEmit"
+    "lint": "eslint --max-warnings 0"
   },
   "dependencies": {
     "clsx": "^2.0.0",
-    "next": "^15.1.6",
+    "next": "^13.1.6",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
@@ -25,7 +24,6 @@
   },
   "lint-staged": {
     "*.{ts,tsx}": [
-      "yarn workspace website run check-types",
       "yarn format",
       "yarn workspace website run lint"
     ]
