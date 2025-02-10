@@ -6,7 +6,10 @@
     "build": "rimraf dist && tsc",
     "lint": "eslint --max-warnings 0",
     "lint:fix": "eslint --fix --max-warnings 0",
-    "lint:fix-all": "eslint . --fix --max-warnings 0"
+    "lint:fix-all": "eslint . --fix --max-warnings 0",
+    "deploy": "sam deploy --profile AdministratorAccess-050752634492",
+    "validate": "sam validate",
+    "validate:lint": "sam validate --lint"
   },
   "dependencies": {
     "cors": "^2.8.5",
