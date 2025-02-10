@@ -12,9 +12,7 @@
     "packages/*"
   ],
   "packageManager": "yarn@1.22.22",
-  "dependencies": {
-    "yarn": "^1.22.22"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@types/node": "20.5.7",
     "husky": "^8.0.0",
