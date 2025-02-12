@@ -2,9 +2,6 @@ AWSTemplateFormatVersion: 2010-09-09
 Description: gws-contact-handler
 Transform: AWS::Serverless-2016-10-31
 
-Parameters:
-  EnvironmentStringType:
-    Type: String
 Resources:
   ContactApiGateway:
     Type: AWS::Serverless::Api
@@ -24,16 +21,17 @@ Resources:
       Timeout: 100
       Environment:
         Variables:
-          ZOHO_CLIENT_ID: !Ref EnvironmentStringType
-          ZOHO_CLIENT_SECRET: !Ref EnvironmentStringType
-          ZOHO_GRANT_TOKEN: !Ref EnvironmentStringType
+          ZOHO_CLIENT_ID: String
+          ZOHO_CLIENT_SECRET: String
+          ZOHO_GRANT_TOKEN: String
+          ZOHO_DESK_DEPARTMENT_ID: String
       Events:
         Api:
           Type: Api
           Properties:
             RestApiId: !Ref ContactApiGateway
             Path: /contact
-            Method: GET
+            Method: POST
 
 Outputs:
   ContactApiGateway:

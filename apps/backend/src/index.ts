@@ -1,17 +1,14 @@
 import cors from 'cors';
-import express, { Router, json } from 'express';
+import express, { json } from 'express';
 import serverlessHttp from 'serverless-http';
 
+import { router } from './routes';
+
 const app = express();
-const router = Router();
 
-router.use(cors());
-router.use(json());
-
-router.get('/contact', (req, res) => {
-  res.json('hello');
-});
+app.use(cors());
+app.use(json());
 
 app.use('/', router);
 
-exports.handler = serverlessHttp(app);
+export const handler = serverlessHttp(app);

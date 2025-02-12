@@ -2,7 +2,9 @@
   "extends": "@packages/tsconfig/base.json",
   "compilerOptions": {
     "outDir": "./dist",
-    "noEmit": false
+    "noEmit": false,
+    "sourceMap": true,
+    "module": "ES2020"
   },
   "include": ["src/**/*.ts"],
   "exclude": ["node_modules"]

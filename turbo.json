@@ -3,6 +3,7 @@
   "tasks": {
     "build": {
       "dependsOn": ["^build"],
+      "passThroughEnv": ["ZOHO_CLIENT_ID", "ZOHO_CLIENT_SECRET", "ZOHO_GRANT_TOKEN", "ZOHO_DESK_DEPARTMENT_ID"],
       "outputs": [".next/**", "!.next/cache/**", "dist/**"]
     },
     "dev": {
