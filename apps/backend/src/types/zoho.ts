@@ -1,6 +1,6 @@
 export interface ZohoDeskCreateTicketReqBody {
   subject: string;
-  departmentId: number;
+  departmentId: string;
   contact: {
     email: string;
     lastName: string;
