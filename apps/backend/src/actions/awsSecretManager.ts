@@ -1,12 +1,12 @@
-import { CreateSecretCommand, GetSecretValueCommand, SecretsManagerClient } from '@aws-sdk/client-secrets-manager';
+import { GetSecretValueCommand, PutSecretValueCommand, SecretsManagerClient } from '@aws-sdk/client-secrets-manager';
 
 import { AWS_SECRET_MANAGER_ZOHO_DESK_REFRESH_TOKEN_KEY } from '../utils';
 
 const client = new SecretsManagerClient();
 
 export const saveRefreshToken = async (refreshToken: string) => {
-  const command = new CreateSecretCommand({
-    Name: AWS_SECRET_MANAGER_ZOHO_DESK_REFRESH_TOKEN_KEY,
+  const command = new PutSecretValueCommand({
+    SecretId: AWS_SECRET_MANAGER_ZOHO_DESK_REFRESH_TOKEN_KEY,
     SecretString: JSON.stringify({ refreshToken }),
   });
 
@@ -25,7 +25,9 @@ export const getRefreshToken = async () => {
   try {
     const response = await client.send(command);
 
-    return response.SecretString;
+    const secretString = response.SecretString?.trim();
+
+    return JSON.parse(secretString ? secretString : '{}').refreshToken ?? '';
   } catch (error) {
     console.error(error);
     return undefined;
