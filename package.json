@@ -11,7 +11,7 @@
     "website:lint:fix-all": "turbo run website#lint:fix-all",
     "backend:build": "turbo run backend#build",
     "backend:dev": "turbo run backend#dev",
-    "backend:deploy": "yarn backend:build && yarn workspace backend run deploy",
+    "backend:deploy": "yarn workspace backend run sam:build && yarn workspace backend run deploy",
     "backend:validate": "yarn workspace backend run validate",
     "backend:validate:lint": "yarn workspace backend run validate:lint",
     "backend:lint": "turbo run backend#lint",

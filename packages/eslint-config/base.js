@@ -60,6 +60,11 @@ export const baseConfigs = [
     },
   },
   {
+    rules: {
+      'no-undef': 'off',
+    },
+  },
+  {
     ignores: ['dist/**', '.next/**', '.turbo/**'],
   },
 ];

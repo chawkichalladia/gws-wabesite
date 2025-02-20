@@ -2,13 +2,15 @@
   "name": "backend",
   "version": "0.1.0",
   "private": true,
-  "type": "module",
+  "type": "commonjs",
   "scripts": {
-    "build": "rimraf dist && tsc",
+    "build": "rimraf dist && tsc && yarn copyPackageJson",
     "dev": "ts-node",
     "lint": "eslint --max-warnings 0",
     "lint:fix": "eslint --fix --max-warnings 0",
     "lint:fix-all": "eslint . --fix --max-warnings 0",
+    "copyPackageJson": "node ./copyPackageJson.mjs",
+    "sam:build": "yarn build && sam build",
     "deploy": "sam deploy --profile AdministratorAccess-050752634492",
     "validate": "sam validate",
     "validate:lint": "sam validate --lint"

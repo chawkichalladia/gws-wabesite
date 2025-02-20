@@ -3,13 +3,20 @@ Description: gws-contact-handler
 Transform: AWS::Serverless-2016-10-31
 
 Resources:
+  ZohoDeskRefreshToken:
+    Type: AWS::SecretsManager::Secret
+    Properties:
+      Name: "zoho-desk-refresh-token-1"
+      Description: "Secret for Zoho Desk oauth token."
+      SecretString: " "
+  
   ContactApiGateway:
     Type: AWS::Serverless::Api
     Properties:
       Name: API Gateway for GWS website
       StageName: Prod
 
-  handleContact:
+  ContactHandler:
     Type: AWS::Serverless::Function
     Properties:
       Handler: index.handler
@@ -25,6 +32,14 @@ Resources:
           ZOHO_CLIENT_SECRET: String
           ZOHO_GRANT_TOKEN: String
           ZOHO_DESK_DEPARTMENT_ID: String
+      Policies:
+        - Statement:
+          - Sid: SecretsManagerAccess
+            Effect: Allow
+            Action:
+            - secretsmanager:GetSecretValue
+            - secretsmanager:PutSecretValue
+            Resource: !Ref ZohoDeskRefreshToken
       Events:
         Api:
           Type: Api

@@ -40,3 +40,6 @@ next-env.d.ts
 
 # env files
 .env*
+
+# WAS SAM
+.aws-sam

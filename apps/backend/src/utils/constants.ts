@@ -1,1 +1,1 @@
-export const AWS_SECRET_MANAGER_ZOHO_DESK_REFRESH_TOKEN_KEY = 'zoho-desk-refresh-token'
+export const AWS_SECRET_MANAGER_ZOHO_DESK_REFRESH_TOKEN_KEY = 'zoho-desk-refresh-token-1'
