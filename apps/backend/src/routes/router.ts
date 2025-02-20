@@ -5,7 +5,7 @@ import { generateAccessToken, injectRefreshTokenFromAWS, injectRefreshTokenFromZ
 
 const router = Router();
 
-router.get(
+router.post(
   '/contact',
   injectRefreshTokenFromAWS,
   injectRefreshTokenFromZoho,
