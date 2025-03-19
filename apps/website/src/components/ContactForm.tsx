@@ -1,10 +1,58 @@
+import axios from 'axios';
 import { clsx } from 'clsx';
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
+import { toast } from 'react-hot-toast';
+import { RotatingLines } from 'react-loader-spinner';
+
+import { ContactContext } from '@/context';
 
 type InputNames = 'name' | 'email' | 'subject' | 'message';
 
 export const ContactForm = () => {
+  const { onSuccess } = useContext(ContactContext);
+
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [subject, setSubject] = useState('');
+  const [message, setMessage] = useState('');
+  const [loading, setLoading] = useState(false);
   const [activeInput, setActiveInput] = useState<InputNames>();
+
+  const setters: Record<InputNames, React.Dispatch<React.SetStateAction<string>>> = {
+    name: setName,
+    email: setEmail,
+    message: setMessage,
+    subject: setSubject,
+  };
+
+  const handleChange = (inputName: InputNames) => (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const value = e.target.value;
+
+    setters[inputName](value);
+  };
+
+  const clearInputs = () => {
+    setName('');
+    setEmail('');
+    setSubject('');
+    setMessage('');
+  };
+
+  const handleSubmit = async () => {
+    setLoading(true);
+
+    try {
+      await axios.post('https://api.galactechwebsolutions.com/contact', { name, email, subject, message });
+
+      onSuccess?.();
+      clearInputs();
+    } catch (error) {
+      console.error(error);
+      toast.error('Something went wrong...');
+    } finally {
+      setLoading(false);
+    }
+  };
 
   return (
     <div className="flex w-full md:w-1/2 justify-center items-center">
@@ -18,7 +66,8 @@ export const ContactForm = () => {
           <div className="bg-white w-full h-full">
             <input
               type="text"
-              name="name"
+              value={name}
+              onChange={handleChange('name')}
               onFocus={() => {
                 setActiveInput('name');
               }}
@@ -39,7 +88,8 @@ export const ContactForm = () => {
           <div className="bg-white w-full h-full">
             <input
               type="email"
-              name="email"
+              value={email}
+              onChange={handleChange('email')}
               onFocus={() => {
                 setActiveInput('email');
               }}
@@ -60,7 +110,8 @@ export const ContactForm = () => {
           <div className="bg-white w-full h-full">
             <input
               type="text"
-              name="subject"
+              value={subject}
+              onChange={handleChange('subject')}
               onFocus={() => {
                 setActiveInput('subject');
               }}
@@ -80,8 +131,9 @@ export const ContactForm = () => {
         >
           <div className="bg-white w-full h-full">
             <textarea
-              name="message"
+              value={message}
               placeholder="Message"
+              onChange={handleChange('message')}
               onFocus={() => {
                 setActiveInput('message');
               }}
@@ -92,8 +144,15 @@ export const ContactForm = () => {
             ></textarea>
           </div>
         </div>
-        <button className="w-full rounded-lg outline-none border-none h-10 font-medium text-xl text-white bg-blue-primary shadow-[0_4px_31px_0_rgba(0,62,221,0.3)]">
-          Submit
+        <button
+          onClick={handleSubmit}
+          disabled={loading}
+          className={clsx(
+            { ['text-white bg-blue-primary']: !loading, ['bg-grey-4 flex justify-center']: loading },
+            'w-full rounded-lg outline-none border-none h-10 font-medium text-xl shadow-[0_4px_31px_0_rgba(0,62,221,0.3)]'
+          )}
+        >
+          {loading ? <RotatingLines width="34px" strokeColor='#36aeff' /> : 'Submit'}
         </button>
       </div>
     </div>

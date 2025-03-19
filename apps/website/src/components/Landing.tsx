@@ -4,11 +4,11 @@ import { useContext } from 'react';
 
 import DiamondImg from '../../public/diamond.svg';
 
-import { GlobalContext } from '@/context';
+import { ContactContext } from '@/context';
 import { orion_pax, poppins } from '@/utils/fonts';
 
 const Landing = () => {
-  const { toggle } = useContext(GlobalContext);
+  const { toggle } = useContext(ContactContext);
 
   return (
     <div className="w-full h-screen flex items-center justify-center flex-col">

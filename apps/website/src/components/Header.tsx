@@ -6,11 +6,11 @@ import Logo from '../../public/logo.png';
 
 import Contact from './Contact';
 
-import { GlobalContext } from '@/context';
+import { ContactContext } from '@/context';
 import { poppins } from '@/utils/fonts';
 
 export const LetsTalkButton = () => {
-  const { toggle } = useContext(GlobalContext);
+  const { toggle } = useContext(ContactContext);
 
   return (
     <>

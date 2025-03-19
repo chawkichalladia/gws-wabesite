@@ -3,10 +3,10 @@ import { useContext } from 'react';
 
 import MessagesIcon from '../../public/messages.svg';
 
-import { GlobalContext } from '@/context';
+import { ContactContext } from '@/context';
 
 const TalkToUs = () => {
-  const { toggle } = useContext(GlobalContext);
+  const { toggle } = useContext(ContactContext);
 
   return (
     <div className="w-full pt-24">

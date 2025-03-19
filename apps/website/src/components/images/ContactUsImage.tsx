@@ -7,10 +7,10 @@ import GoldStarImage from '../../../public/contact_us/gold_star.png';
 import GreyStarImage from '../../../public/contact_us/grey_star.png';
 import MessageImage from '../../../public/contact_us/message.png';
 
-import { GlobalContext } from '@/context';
+import { ContactContext } from '@/context';
 
 export const ContactUsImage = () => {
-  const { open } = useContext(GlobalContext);
+  const { open } = useContext(ContactContext);
 
   return (
     <div className="w-full max-w-[402px] relative aspect-[2016/2254]">

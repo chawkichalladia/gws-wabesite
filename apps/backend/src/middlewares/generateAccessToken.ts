@@ -14,7 +14,7 @@ export const generateAccessToken = async (req: Request<ReqParams>, res: Response
   const response = await generateTokenFromRefreshToken(req.params.refresh);
 
   if (!response || !response.access_token) {
-    res.status(500).send('Failed to load refresh token');
+    res.status(500).send('Failed to load access token');
     return;
   }
 

@@ -1,5 +1,7 @@
 'use client';
 
+import { Toaster } from 'react-hot-toast';
+
 import Coding from '@/components/Coding';
 import Footer from '@/components/Footer';
 import Header from '@/components/Header';
@@ -10,11 +12,12 @@ import OurTechnologies from '@/components/OurTechnologies';
 import OwnYourSpace from '@/components/OwnYourSpace';
 import Services from '@/components/Services';
 import TalkToUs from '@/components/TalkToUs';
-import { GlobalContextProvider } from '@/context';
+import { ContactContextProvider } from '@/context';
 
 const page = () => {
   return (
-    <GlobalContextProvider>
+    <ContactContextProvider>
+      <Toaster position="bottom-center" />
       <div className="w-full">
         <div className="w-full -ml-[5%] h-screen absolute -z-10 earth-bg bg-center bg-no-repeat bg-cover md:bg-contain"></div>
         <Header />
@@ -28,7 +31,7 @@ const page = () => {
         <OurTechnologies />
         <Footer />
       </div>
-    </GlobalContextProvider>
+    </ContactContextProvider>
   );
 };
 
