@@ -1,12 +1,11 @@
 import { clsx } from 'clsx';
 import Image from 'next/image';
 import { useContext } from 'react';
-import { Checkmark } from 'react-checkmark';
 
 import GreyX from '../../public/grey_x.png';
 
 import { ContactForm } from './ContactForm';
-import { ContactUsImage } from './images';
+import { Checkmark, ContactUsImage } from './images';
 
 import { ContactContext } from '@/context';
 import { poppins } from '@/utils/fonts';
@@ -17,7 +16,7 @@ const Contact = () => {
   return (
     <div
       onTransitionEnd={() => {
-        setIsSuccess?.(false);
+        if (!open) setIsSuccess?.(false);
       }}
       className={clsx(
         { ['invisible opacity-0']: !open, ['visible opacity-100']: open },

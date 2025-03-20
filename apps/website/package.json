@@ -15,7 +15,6 @@
     "clsx": "^2.0.0",
     "next": "^13.1.6",
     "react": "18.2.0",
-    "react-checkmark": "^2.1.1",
     "react-dom": "18.2.0",
     "react-hot-toast": "^2.5.2",
     "react-loader-spinner": "^6.1.6"
