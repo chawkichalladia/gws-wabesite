@@ -2,5 +2,5 @@ export interface ContactState {
   open: boolean;
   isSuccess: boolean;
   toggle: () => void;
-  onSuccess: () => void;
+  setIsSuccess: (isSuccess: boolean) => void;
 }

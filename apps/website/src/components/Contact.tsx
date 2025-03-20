@@ -12,10 +12,13 @@ import { ContactContext } from '@/context';
 import { poppins } from '@/utils/fonts';
 
 const Contact = () => {
-  const { isSuccess, open, toggle } = useContext(ContactContext);
+  const { isSuccess, open, toggle, setIsSuccess } = useContext(ContactContext);
 
-  return open ? (
+  return (
     <div
+      onTransitionEnd={() => {
+        setIsSuccess?.(false);
+      }}
       className={clsx(
         { ['invisible opacity-0']: !open, ['visible opacity-100']: open },
         'flex w-screen h-screen fixed top-0 left-0 items-center justify-center bg-grey-8 bg-opacity-50 z-50  transition-[opacity, visibility] duration-700'
@@ -59,7 +62,7 @@ const Contact = () => {
         </div>
       )}
     </div>
-  ) : null;
+  );
 };
 
 export default Contact;

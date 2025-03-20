@@ -9,7 +9,7 @@ import { ContactContext } from '@/context';
 type InputNames = 'name' | 'email' | 'subject' | 'message';
 
 export const ContactForm = () => {
-  const { onSuccess } = useContext(ContactContext);
+  const { setIsSuccess } = useContext(ContactContext);
 
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -44,7 +44,7 @@ export const ContactForm = () => {
     try {
       await axios.post('https://api.galactechwebsolutions.com/contact', { name, email, subject, message });
 
-      onSuccess?.();
+      setIsSuccess?.(true);
       clearInputs();
     } catch (error) {
       console.error(error);
