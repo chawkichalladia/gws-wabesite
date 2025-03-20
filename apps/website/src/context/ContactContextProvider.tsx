@@ -15,11 +15,13 @@ export const ContactContextProvider = ({ children }: ContactContextProviderProps
   };
 
   useEffect(() => {
-    if (isSuccess) {
-      setTimeout(() => {
-        setOpen(false);
-      }, 2000);
-    }
+    if (!isSuccess) return;
+
+    const timeout = setTimeout(() => {
+      setOpen(false);
+    }, 2000);
+
+    return () => clearTimeout(timeout);
   }, [isSuccess]);
 
   return (
