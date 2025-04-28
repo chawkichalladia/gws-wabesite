@@ -2,7 +2,7 @@ import Image from 'next/image';
 import { useContext } from 'react';
 
 import ArrowCircleRight from '../../public/arrow-circle-right.svg';
-import Logo from '../../public/logo.png';
+import Logo from '../../public/logo_white.png';
 
 import Contact from './Contact';
 
