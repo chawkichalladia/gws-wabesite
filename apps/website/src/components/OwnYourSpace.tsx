@@ -22,9 +22,11 @@ const OwnYourSpace = () => {
         <Image src={OwnYourSpaceImage} alt="own your space image" className="pt-10 pb-14 lg:pt-16 lg:pb-20" />
       </div>
       <p>
-        We collaborate with you to develop user-friendly websites, cloud solutions, and tactical software applications,
-        integrations, and software. Transform your ideas and requirements into solutions that will streamline your
-        operations so you can spend more time interacting with and attracting more customers.
+        Take the first step towards a successful products and get in touch with us. You brind your ideas and the{' '}
+        <b>
+          <i>GALACTECH WEB SOLUTIONS</i>
+        </b>{' '}
+        team will make it happen
       </p>
       <div className="w-full flex items-center justify-center pt-14">
         <LetsTalkButton />

@@ -11,7 +11,7 @@ const InGalactech = () => {
       <div className="w-full flex flex-col items-center justify-center pt-28">
         <div className="w-full flex justify-center text-center">
           <h2 className={clsx(poppins.className, 'uppercase text-2xl lg:text-5xl font-bold')}>
-            “IN GALACTECH, CREATIVITY HAS NO LIMITS”
+            “IN GALACTECH WEB SOLUTIONS, CREATIVITY HAS NO LIMITS”
           </h2>
         </div>
         <Image src={GalaxyGif} alt="galaxy gif" className="py-14 xl:w-[900px] xl:hh-[600px]" />

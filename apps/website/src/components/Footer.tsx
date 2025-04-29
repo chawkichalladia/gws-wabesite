@@ -28,7 +28,10 @@ const Footer = () => {
         </div>
         <hr className="border-grey-1 w-full" />
         <div className="container text-center text-xs xl:text-sm">
-          Galactech Web Solutions © All rights reserved - 2025.
+          <b>
+            <i>GALACTECH WEB SOLUTIONS</i>
+          </b>{' '}
+          © All rights reserved - 2025.
         </div>
       </div>
     </footer>

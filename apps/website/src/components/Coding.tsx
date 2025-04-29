@@ -13,9 +13,13 @@ const Coding = () => {
       <SectionHead image={MessageIcon} label="coding" title="Digital transformation" />
       <div className="w-full flex flex-col items-center justify-center">
         <p className="pt-11">
-          Galatech offers support to clients at every stage of business or software development, from early-stage
-          startups to large corporations with an eye toward expansion and optimization, regardless of the sector in
-          which they specialize.
+          <b>
+            <i>GALACTECH WEB SOLUTIONS</i>
+          </b>{' '}
+          offers support to clients at every stage of the software development process, From defining the specifications
+          to maintenance and support. We also offer our services to companies of all sizes, from early-stage startups to
+          large corporations with an eye toward expansion and optimization, regardless of the sector in which they
+          specialize.
         </p>
         <div className="py-24 lg:py-40 w-full md:w-4/5 lg:w-2/3 xl:w-1/2">
           <DigitalTransformationImage />
